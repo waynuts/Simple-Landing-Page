@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 70px;
+}
+
+#nav-bar {
+    position: fixed;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 50%;
+        margin-bottom: -8px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #0B63DC;
+    }
+}
